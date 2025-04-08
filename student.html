@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Notice Board</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #60d0fc, #c4faee);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .custom-navbar {
+      background: linear-gradient(135deg, #60d0fc, #c4faee);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 12px 12px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .custom-navbar .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #0d6efd;
+    }
+
+    .custom-navbar .nav-link {
+      margin-right: 20px;
+      font-size: 1rem;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .custom-navbar .nav-link:hover,
+    .custom-navbar .nav-link.active {
+      color: #0d6efd;
+    }
+
+    .custom-navbar .btn-outline-success {
+      border-radius: 20px;
+      padding: 5px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .custom-navbar .btn-outline-success:hover {
+      background-color: #0d6efd;
+      color: #fff;
+      border-color: #0d6efd;
+    }
+
+    .main-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .main-container h1 {
+      color: #0a4d68;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .info-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+    }
+
+    .info-card h4 {
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+
+    .footer {
+      background-color: #0a4d68;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .info-card {
+        width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ClassNoticeBoard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="student_notices.php">Notices</a>
+          </li>
+        </ul>
+        <a href="index.html" class="btn btn-outline-success">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <h1>📢 Welcome to the Class Notice Board</h1>
+    <p class="lead">Stay updated with all the important announcements and class updates in one place.</p>
+
+    <div class="cards-wrapper">
+      <div class="info-card">
+        <h4>📅 Daily Notices</h4>
+        <p>Get real-time updates about daily schedules, changes, and new announcements.</p>
+      </div>
+      <div class="info-card">
+        <h4>🧑‍🏫 Teacher Posts</h4>
+        <p>View notices posted directly by your teachers regarding assignments, exams, and more.</p>
+      </div>
+      <div class="info-card">
+        <h4>📚 Academic Updates</h4>
+        <p>Never miss an important academic update—it's all organized and easy to find here.</p>
+      </div>
+      <div class="info-card">
+        <h4>📌 Easy Access</h4>
+        <p>Access notices from any device. Clean interface and easy navigation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Class Notice Board. All rights reserved. | Designed for seamless student updates.
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
