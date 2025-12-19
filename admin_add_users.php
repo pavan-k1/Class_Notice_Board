@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">ClassNoticeBoard</a>
+      <a class="navbar-brand" href="#">🎓 EduAssist</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -151,9 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <li class="nav-item">
             <a class="nav-link active" href="admin.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admin_all_notices.php">AllNotices</a>
-          </li>
+         
           <li class="nav-item">
             <a class="nav-link" href="admin_add_users.php">AddUsers</a>
           </li>

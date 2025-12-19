@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Class Notice Board</title>
+  <title>EduAssist - Student</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
 
+  <!-- YOUR ORIGINAL CSS (UNCHANGED) -->
   <style>
     body {
       background: linear-gradient(135deg, #60d0fc, #c4faee);
@@ -120,60 +122,76 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">ClassNoticeBoard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="student_notices.php">Notices</a>
-          </li>
-        </ul>
-        <a href="index.html" class="btn btn-outline-success">Logout</a>
-      </div>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🎓 EduAssist</a>
 
-  <!-- Main Content -->
-  <div class="main-container">
-    <h1>📢 Welcome to the Class Notice Board</h1>
-    <p class="lead">Stay updated with all the important announcements and class updates in one place.</p>
-
-    <div class="cards-wrapper">
-      <div class="info-card">
-        <h4>📅 Daily Notices</h4>
-        <p>Get real-time updates about daily schedules, changes, and new announcements.</p>
-      </div>
-      <div class="info-card">
-        <h4>🧑‍🏫 Teacher Posts</h4>
-        <p>View notices posted directly by your teachers regarding assignments, exams, and more.</p>
-      </div>
-      <div class="info-card">
-        <h4>📚 Academic Updates</h4>
-        <p>Never miss an important academic update—it's all organized and easy to find here.</p>
-      </div>
-      <div class="info-card">
-        <h4>📌 Easy Access</h4>
-        <p>Access notices from any device. Clean interface and easy navigation.</p>
-      </div>
+    <div class="collapse navbar-collapse show">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Summarize</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Attempt Quiz</a>
+        </li>
+      </ul>
+      <a href="index.html" class="btn btn-outline-success">Logout</a>
     </div>
   </div>
+</nav>
 
-  <!-- Footer -->
-  <div class="footer">
-    © 2025 Class Notice Board. All rights reserved. | Designed for seamless student updates.
+<!-- Main Content -->
+<div class="main-container">
+  <h1>Welcome Student 👋</h1>
+  <p class="lead">Your AI-powered learning journey starts here</p>
+
+  <div class="cards-wrapper">
+    <div class="info-card">
+      <h4>📘 What is EduAssist?</h4>
+      <p>
+        An AI-powered platform that helps students learn smarter with
+        intelligent summarization and interactive quizzes.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h4>📄 Summarizer Module</h4>
+      <p>
+        Transform lengthy texts into concise, easy-to-understand summaries.
+        Perfect for quick revision and note-taking.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h4>📝 Quiz Generator</h4>
+      <p>
+        Generate custom quizzes from any text to test your knowledge
+        and reinforce learning effectively.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h4>✨ Benefits</h4>
+      <p>
+        Save time, improve retention, and study more efficiently with
+        assistance tailored to your learning pace.
+      </p>
+    </div>
   </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<div class="footer">
+  © 2025 EduAssist. All rights reserved.
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

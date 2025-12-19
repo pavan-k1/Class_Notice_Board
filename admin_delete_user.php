@@ -149,11 +149,11 @@ $users = $stmt->get_result();
 
 <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ClassNoticeBoard</a>
+        <a class="navbar-brand" href="#">🎓 EduAssist</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link active" href="admin.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="admin_all_notices.php">AllNotices</a></li>
+                
                 <li class="nav-item"><a class="nav-link" href="admin_add_users.php">AddUsers</a></li>
                 <li class="nav-item"><a class="nav-link" href="admin_delete_user.php">DeleteUsers</a></li>
             </ul>

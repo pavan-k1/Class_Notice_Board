@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Class Notice Board</title>
+  <title>EduAssist | Teacher</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
 
   <style>
@@ -118,66 +119,79 @@
         width: 90vw;
       }
     }
-    
-
   </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">ClassNoticeBoard</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="teacher_all_notice.php">AllNotices</a></li>
-                <li class="nav-item"><a class="nav-link" href="teacher_my_notices.php">MyNotices</a></li>
-                <li class="nav-item"><a class="nav-link" href="teacher_post_notice.php">PostNewNotice</a></li>
-            </ul>
-            
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🎓 EduAssist</a>
 
-            <a href="index.html" class="btn btn-outline-success">Logout</a>
-        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Summarize</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Generate Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Review Questions</a></li>
+      </ul>
+
+      <a href="index.html" class="btn btn-outline-success">Logout</a>
     </div>
+  </div>
 </nav>
 
+<!-- Main Content -->
+<div class="main-container">
+  <h1>Welcome Teacher 👩‍🏫</h1>
+  <p class="lead">Manage your classroom and create engaging content</p>
 
-  <!-- Main Content -->
-  <div class="main-container">
-    <h1>📢 Welcome to the Class Notice Board</h1>
-    <p class="lead">Stay updated with all the important announcements and class updates in one place.</p>
+  <div class="cards-wrapper">
+    <div class="info-card">
+      <h4>📄 Summarizer</h4>
+      <p>
+        Generate concise summaries from lengthy texts to create
+        study materials for students.
+      </p>
+    </div>
 
-    <div class="cards-wrapper">
-      <div class="info-card">
-        <h4>📅 Daily Notices</h4>
-        <p>Get real-time updates about daily schedules, changes, and new announcements.</p>
-      </div>
-      <div class="info-card">
-        <h4>🧑‍🏫 Teacher Posts</h4>
-        <p>View notices posted directly by your teachers regarding assignments, exams, and more.</p>
-      </div>
-      <div class="info-card">
-        <h4>📚 Academic Updates</h4>
-        <p>Never miss an important academic update—it's all organized and easy to find here.</p>
-      </div>
-      <div class="info-card">
-        <h4>📌 Easy Access</h4>
-        <p>Access notices from any device. Clean interface and easy navigation.</p>
-      </div>
+    <div class="info-card">
+      <h4>🧠 Question Generation</h4>
+      <p>
+        Automatically generate quiz questions from any text
+        using AI-powered tools.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h4>📘 Review Questions</h4>
+      <p>
+        Review, edit, and manage all generated questions
+        before assigning them to students.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h4>✨ Benefits</h4>
+      <p>
+        Save time with AI-powered content creation and
+        streamline your teaching workflow.
+      </p>
     </div>
   </div>
+</div>
 
-  <!-- Footer -->
-  <div class="footer">
-    © 2025 Class Notice Board. All rights reserved. | Designed for seamless student updates.
-  </div>
+<!-- Footer -->
+<div class="footer">
+  © 2025 EduAssist. All rights reserved.
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
